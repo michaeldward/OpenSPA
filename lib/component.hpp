@@ -67,7 +67,7 @@ protected:
   Com communicator;
   uint8_t publishIter;
   uint16_t dialogId;
-  std::vector<Subscriber> subscribers; // Should we make this a vector of pointers?
+  std::vector<std::shared_ptr<Subscriber>> subscribers;
 };
 
 #endif
